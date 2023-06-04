@@ -1,0 +1,131 @@
+.product {
+    padding-top: 120px;
+    padding-bottom: 168px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-img-wrapper{
+    margin-right: 86px;
+    padding-left: 60px;
+    padding-bottom: 74px;
+    position: relative;
+}
+.product-card {
+position: absolute;
+left: 0px;
+bottom: 0px;
+
+}
+.product-img {
+    
+    border-radius: 18px;
+}
+
+.product-contant {
+    max-width: 584px;
+    
+}
+
+.product-contant-title {
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+    color: #424242;
+    padding-bottom: 10px;
+    
+}
+
+.product-contant-subtitle {
+    font-family: 'Georgia',serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+    padding-bottom: 20px;
+    
+}
+
+.product-text {
+    max-width: 530px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 144%;
+    color: #484848;
+
+    margin-bottom: 40px;
+    
+}
+.product-contant-btn {
+
+}
+
+@media (max-width: 1299px) {
+    .product {
+        padding-top: 80px;
+        
+    }
+    .product-img-wrapper{
+       flex: 1 0 auto;
+       flex-basis: 50%;
+    }
+    .product-contant-subtitle {
+        font-size: 40px;
+        line-height: 130%;
+    }
+    .product-card {
+        top: 60%;
+    }
+}
+
+@media (max-width: 991px) {
+    .product-row {
+        flex-direction: column-reverse;
+    }
+    .product {
+        padding-top: 40px;
+        
+    }
+    .product-contant {
+        margin-bottom: 40px;
+    }
+    .product-card {
+        position: relative;
+        z-index: 2;
+        margin-top: -10%;
+        display: flex;
+        justify-content: center;
+
+}
+    .product-img-wrapper {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .product-contant-subtitle {
+        font-size:30px ;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .product-card {
+        position: relative;
+        z-index: 2;
+        margin-top: -10%;
+        display: flex;
+        justify-content: center;
+        margin: -30% 15px 0;
+    }
+    .product {
+        padding-top: 40px;
+        
+    }
+}
